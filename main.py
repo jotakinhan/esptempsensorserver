@@ -13,7 +13,7 @@ avg=0
 def main():
 
     #Define the Heroku server url where to send temp. data
-    url = "https://tempsensorserver.herokuapp.com/postdata"
+    url = "https://esptempsensorserver.herokuapp.com/postdata"
     headers = {'content-type': 'application/json'}
     counter = 0
     values = []
