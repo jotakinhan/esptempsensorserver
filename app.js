@@ -32,7 +32,7 @@ app.get('/data', (req, res) => {
     res.send(sensorData)
 })
 
-//Receive a new temp value from ESP (max 60)
+//Receive a new temp value from ESP (max 60, 1 hour)
 app.post('/postdata', (req, res) => {
     let value = req.body.value
     if (sensorData.length < 60) {
